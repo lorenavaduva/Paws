@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ChoosePetFragment">
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="900dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/background"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.094" />
+
+    <TextView
+        android:id="@+id/screenTitle"
+        android:layout_width="268dp"
+        android:layout_height="30dp"
+        android:background="#009C27B0"
+        android:backgroundTint="#FFFFFF"
+        android:fontFamily="@font/fredoka_one"
+        android:text="CHOOSE YOUR FRIEND"
+        android:textColor="@color/black"
+        android:textSize="24dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.608"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.149" />
+
+    <ImageView
+        android:id="@+id/firstPetImage"
+        android:layout_width="203dp"
+        android:layout_height="194dp"
+        android:layout_marginTop="64dp"
+        android:src="@drawable/pet1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/screenTitle"
+        app:layout_constraintVertical_bias="0.162" />
+
+    <ImageView
+        android:id="@+id/secondPetImage"
+        android:layout_width="182dp"
+        android:layout_height="217dp"
+        android:src="@drawable/pet2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.7" />
+
+
+
+    <ImageView
+        android:id="@+id/thirdPetImage"
+        android:layout_width="190dp"
+        android:layout_height="377dp"
+        android:layout_marginTop="424dp"
+        android:src="@drawable/pet3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.004"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/secondPetButton"
+        android:layout_width="110dp"
+        android:layout_height="30dp"
+        android:background="@color/orange"
+        android:backgroundTint="#9C27B0"
+        android:backgroundTintMode="add"
+        android:bottomLeftRadius="10dp"
+        android:bottomRightRadius="10dp"
+        android:shadowRadius="400"
+        android:text="Pick Dixie"
+        android:topLeftRadius="10dp"
+        android:topRightRadius="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.901"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/screenTitle"
+        app:layout_constraintVertical_bias="0.352" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/thirdPetButton"
+        android:layout_width="117dp"
+        android:layout_height="31dp"
+        android:background="#EB6C50"
+        android:bottomLeftRadius="10dp"
+        android:bottomRightRadius="10dp"
+        android:text="Pick Muffin"
+        android:topLeftRadius="10dp"
+        android:topRightRadius="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.709"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/screenTitle"
+        app:layout_constraintVertical_bias="0.883" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/firstPetButton"
+        android:layout_width="118dp"
+        android:layout_height="39dp"
+        android:backgroundTint="#FF9800"
+        android:bottomLeftRadius="100dp"
+        android:bottomRightRadius="100dp"
+        android:text="Pick sushi"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.425"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.3" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
